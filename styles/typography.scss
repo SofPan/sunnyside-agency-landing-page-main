@@ -6,10 +6,29 @@ h1{
     color: $light;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
+}
+
+h2{
+    font-weight: 900;
+    line-height: 30px;
+    width: 50%;
+}
+
+h3{
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
 }
 
 p{
     font-size: 18px;
+    line-height: 26px;
     font-family: $font-primary;
+}
+
+.small{
+    font-size: 14px;
+    color: $gray;
 }
