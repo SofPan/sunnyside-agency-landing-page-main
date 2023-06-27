@@ -271,5 +271,24 @@ button {
   line-height: 28px;
   font-size: 18px;
 }
+.brand .services .bottom {
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+}
+.brand .services .design {
+  color: hsl(167, 40%, 24%);
+}
+.brand .services .photography {
+  color: hsl(198, 62%, 26%);
+}
+.brand .services h2 {
+  margin-bottom: 12px;
+}
+.brand .services p {
+  width: 75%;
+}
 
 /*# sourceMappingURL=styles.css.map */

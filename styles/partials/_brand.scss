@@ -27,4 +27,29 @@
         }
     }
     
+    .services{
+        .bottom{
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100%;
+            text-align: center;
+            align-items: center;
+        }
+
+        .design{
+            color: $cyan;
+        }
+
+        .photography{
+            color: $blue;
+        }
+
+        h2{
+            margin-bottom: 12px;
+        }
+
+        p{
+            width: 75%;
+        }
+    }
 }
