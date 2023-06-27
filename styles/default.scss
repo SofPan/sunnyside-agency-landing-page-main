@@ -1,0 +1,49 @@
+body, header, main, footer, section, nav, ul, ol, li, h1, h2, h3, h4, p, a{
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+button{
+    background: $light;
+    border: 1px solid $light;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $dark;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+
+
+/* --- Layout --- */ 
+header{
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+/* --- Pane Specific --- */ 
+.pane{
+    &--nav{
+        max-width: 1440px;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    &--title{
+        padding-top: 30px;
+    }
+}

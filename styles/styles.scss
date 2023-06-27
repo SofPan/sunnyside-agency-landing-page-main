@@ -1,7 +1,8 @@
-body{
-    font-size: 62.5%;
-}
+@import './variables.scss';
+@import './typography.scss';
+@import './default.scss';
 
-p{
-    font-size: 1.8rem;
-}
+@import './partials/background';
+@import './partials/nav';
+@import './partials/logo';
+@import './partials/icons';

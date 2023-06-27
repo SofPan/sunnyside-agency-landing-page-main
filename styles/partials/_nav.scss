@@ -1,0 +1,23 @@
+.nav{
+    &--container{
+        ul{
+            li{
+                margin: 0 15px;
+                display: inline-block;
+                a{
+                    font-family: $font-primary;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    &--header{
+        ul{
+            li{
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

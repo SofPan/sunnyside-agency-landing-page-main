@@ -1,0 +1,11 @@
+.icon{
+    &--arrow{
+        background-image: url('../../images/icon-arrow-down.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 75px;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+}

@@ -1,9 +1,108 @@
-body {
-  font-size: 62.5%;
+/* --- Layouts --- */
+/* --- Colors --- */
+/* Primary */
+/* Neutral */
+/* --- Typography --- */
+h1, h2, h3, h4, button, .cta-link {
+  font-family: "Fraunces", serif;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
 }
 
 p {
-  font-size: 1.8rem;
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+}
+
+body, header, main, footer, section, nav, ul, ol, li, h1, h2, h3, h4, p, a {
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+button {
+  background: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  font-weight: 700;
+  color: hsl(212, 27%, 19%);
+  border-radius: 30px;
+  padding: 10px 15px;
+}
+
+/* --- Layout --- */
+header {
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+/* --- Pane Specific --- */
+.pane--nav {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.pane--title {
+  padding-top: 30px;
+}
+
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.background-hero {
+  background-image: url("../../images/desktop/image-header.jpg");
+  background-position-y: bottom;
+}
+
+.nav--container ul li {
+  margin: 0 15px;
+  display: inline-block;
+}
+.nav--container ul li a {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+.nav--header ul li a {
+  color: #fff;
+}
+
+.logo {
+  background-image: url("../images/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 30px;
+}
+
+.icon--arrow {
+  background-image: url("../../images/icon-arrow-down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 75px;
+  margin: 0 auto;
+  margin-top: 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */

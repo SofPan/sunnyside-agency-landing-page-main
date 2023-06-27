@@ -1,0 +1,9 @@
+.background{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    &-hero{
+        background-image: url('../../images/desktop/image-header.jpg');
+        background-position-y: bottom;
+    }
+}
