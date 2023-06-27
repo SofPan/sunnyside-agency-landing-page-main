@@ -1,9 +1,30 @@
 .background{
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
     &-hero{
-        background-image: url('../../images/desktop/image-header.jpg');
+        @include bgImage('image-header.jpg');
         background-position-y: bottom;
+    }
+    &-transform{
+        @include bgImage('image-transform.jpg');
+    }
+    &-standout{
+        @include bgImage('image-stand-out.jpg');
+    }
+    &-photography{
+        @include bgImage('image-photography.jpg');
+    }
+    &-design{
+        @include bgImage('image-graphic-design.jpg');
+    }
+    &-cone{
+        @include bgImage('image-gallery-cone.jpg');
+    }
+    &-orange{
+        @include bgImage('image-gallery-orange.jpg');
+    }
+    &-milkbottles{
+        @include bgImage('image-gallery-milkbottles.jpg');
+    }
+    &-cubes{
+        @include bgImage('image-gallery-sugarcubes.jpg');
     }
 }

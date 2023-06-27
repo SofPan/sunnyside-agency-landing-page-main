@@ -1,49 +1,95 @@
-body, header, main, footer, section, nav, ul, ol, li, h1, h2, h3, h4, p, a{
-    padding: 0;
-    margin: 0;
+body,
+header,
+main,
+footer,
+section,
+nav,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+	padding: 0;
+	margin: 0;
 }
 
-ul, ol{
-    list-style: none;
+body{
+	color: $dark;
 }
 
-a{
-    color: #000;
-    text-decoration: none;
+ul,
+ol {
+	list-style: none;
 }
 
-button{
-    background: $light;
-    border: 1px solid $light;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: $dark;
-    border-radius: 30px;
-    padding: 10px 15px;
+a {
+	text-decoration: none;
 }
 
-
-/* --- Layout --- */ 
-header{
-    height: 100vh;
+button {
+	background: $light;
+	border: 1px solid $light;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: $dark;
+	border-radius: 30px;
+	padding: 10px 15px;
 }
 
-.flex{
-    display: flex;
+.cta-link{
+	position: relative;
+	max-width: fit-content;
+	text-transform: uppercase;
+	&::after{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 5px;
+		bottom: 0;
+		left: 0;
+		opacity: 0.3;
+		z-index: 20;
+		border-radius: 15px;
+	}
+	&.yellow{
+		&::after{
+			background-color: $yellow;
+		}
+	}
+	&.red{
+		&::after{
+			background-color: $red;
+		}
+	}
 }
 
-/* --- Pane Specific --- */ 
-.pane{
-    &--nav{
-        max-width: 1440px;
-        width: 90%;
-        margin: 0 auto;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 0;
-    }
+/* --- Layout --- */
+header {
+	@media only screen and (min-width: $tablet) {
+		height: 100vh;
+	}
+}
 
-    &--title{
-        padding-top: 30px;
-    }
+.flex {
+	display: flex;
+}
+
+/* --- Pane Specific --- */
+.pane {
+	&--nav {
+		max-width: 1440px;
+		width: 90%;
+		margin: 0 auto;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+	}
+
+	&--title {
+		padding-top: 30px;
+	}
 }

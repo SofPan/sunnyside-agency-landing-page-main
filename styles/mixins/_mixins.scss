@@ -1,0 +1,10 @@
+@mixin bgImage ($url: ''){
+    background-image: url('../../images/desktop/' + $url);
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    @media only screen and (max-width: $tablet) {
+        background-image: url('../../images/mobile/' + $url);
+    }
+}
